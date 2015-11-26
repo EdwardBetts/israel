@@ -1,28 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <!--  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+   	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <meta charset="UTF-8"> -->
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Optional theme -->
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/main.css" >
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css"/>
     <!-- Latest compiled and minified JavaScript -->
     <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/wScratchPad.min.js"></script>
+    <!--<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></scrip-->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/wScratchPad.min.js"></script>
 
 </head>
 <body>
-<div class="modal-backdrop">
-	
-</div>
-<div class="modal-holder">
-	<div class="modal-box">
-		<div id="elem">
+  <div class="modal-backdrop">
+  </div>
+  <div class="modal-holder">
+  	<div class="modal-box">
+      <div id='thanx-msg'>
+        <div class="message-holder">
+          <p class="message"> THANK YOU</p>
+        </div>
+      </div>
+  		<div id="elem">
+  		</div>
+			<div id='send-form'>
+      <div class="form-header">
+          <p class="header-text"> FORM</p>
+        </div>
+        <div class='content-holder'>
+          <div class="form-group">
+            <label for="name" >Name</label>
+            <input type="text" class="form-control" id='name' >
+          </div>
+          <div class="form-group">
+            <label for="email" >Email</label>
+            <input type="text" class="form-control" id='email'>
+          </div>
+          <div class="form-group">
+            <label for="number">Phone number</label>
+            <input type="text" class="form-control" id='number'>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" id='checkbox'> Check me out
+            </label>
+          </div>
+          <div class="button-holder">
+            <button class="btn" id='send'>SEND</button>
+          </div>          
+        </div>
 		</div>
-	</div>	
-</div>
+  	</div>	
+  </div>
 </body>
