@@ -14,7 +14,8 @@ $(document).ready(function(){
     scratchUp   : function(e, percent){  },
     cursor      : null // Set cursor.
   });
-  $('#send').on('click', function(){
+  $('#send').on('click', function(e){
+    e.preventDefault();
     $('#thanx-msg').fadeIn();
     $('#send-form').css('display', 'none');
     $.ajax({
@@ -28,5 +29,6 @@ $(document).ready(function(){
       },
       dataType: 'json'
     });
-  });  
+  });
+  $('#email').jqBootstrapValidation()
 });

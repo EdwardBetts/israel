@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Optional theme -->
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link href="css/simple-sidebar.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/scratchcard.css"/>
     <!-- Latest compiled and minified JavaScript -->
     <script src="js/jquery-2.1.4.min.js"></script>
     <!--<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></scrip-->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/scratchcard.js"></script>
     <script src="js/wScratchPad.min.js"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
 
 </head>
 <body>
@@ -29,20 +30,23 @@
       </div>
   		<div id="elem">
   		</div>
-			<div id='send-form'>
+      <form id='send-form' class="form-horizontal">
       <div class="form-header">
           <p class="header-text"> FORM</p>
         </div>
         <div class='content-holder'>
-          <div class="form-group">
+          <div class="control-group">
             <label for="name" >Name</label>
             <input type="text" class="form-control" id='name' >
           </div>
-          <div class="form-group">
-            <label for="email" >Email</label>
-            <input type="text" class="form-control" id='email'>
+          <div class="control-group">
+            <label for="email" class="control-label">Email</label>
+            <div class="controls">
+            <input type="email" class="form-control" id='email'>
+            <p class="help-block"></p>
+            </div>
           </div>
-          <div class="form-group">
+          <div class="control-group">
             <label for="number">Phone number</label>
             <input type="text" class="form-control" id='number'>
           </div>
@@ -55,7 +59,7 @@
             <button class="btn" id='send'>SEND</button>
           </div>          
         </div>
-		</div>
+    </form>
   	</div>	
   </div>
 </body>

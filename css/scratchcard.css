@@ -1,0 +1,80 @@
+/* Scratchcard*/
+#elem {
+  height:30em;
+  min-height: 365px;
+}
+
+#send-form {
+  margin-top: 20px;
+  display: none;
+  min-height: 365px;
+  height:30em;
+  background-image: url(img/bg.jpg);
+}
+
+.form-header {
+  padding-top: 10px;
+}
+
+.header-text {
+  color:#FFF;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 1px solid #FFF;
+}
+
+.content-holder {
+  width:85%;
+  margin: 0 auto;
+}
+
+.control-group label, .checkbox{
+  color:#FFF;
+  margin-top: 10px;
+}
+
+.button-holder {
+  text-align: center;
+}
+
+button {
+  margin-top: 10px;
+  color:#FFF;
+  background-color: #9F804e;
+}
+
+button.btn:hover {
+  color:#FFF;
+}
+
+#thanx-msg {
+  min-height: 365px;
+  display: none;
+  background-image: url(img/bg.jpg);
+  height:30em;
+  text-align: center;
+}
+
+.message { 
+  color:#FFF;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+p.message {
+  padding-top: 7em; 
+}
+
+.warning input{
+  border-color: #F00;
+}
+.warning input:focus{
+  border-color: #F00;
+}
+
+.controls p {
+  display: none;
+  margin-left:-25px;
+  color:#F00;
+  font-size:14px;
+}
