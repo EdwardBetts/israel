@@ -3,7 +3,7 @@ $(document).ready(function(){
     size        : 50,          // The size of the brush/scratch.
     bg          : 'css/img/bg.jpg',  // Background (image path or hex color).
     fg          : 'css/img/ScratchImage.jpg',  // Foreground (image path or hex color).
-    realtime    : true,       // Calculates percentage in realitime.
+    realtime    : true,       // Calculates percentage in realtime.
     scratchDown : function(e, percent){ },
     scratchMove : function(e, percent){
       if(percent>75){
